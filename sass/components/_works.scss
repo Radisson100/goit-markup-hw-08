@@ -1,0 +1,49 @@
+.works { 
+  @media screen and (max-width: 1199px) {
+  display: none;
+}
+}
+.no-padding {
+    padding-top: 0%;
+  }
+  
+  .works-title {
+    @include font( 700, 36px, 1.17, 0.03em);
+    
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .works-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+
+    &__item {
+      flex-basis: calc(100% / 3 - 30px);
+      margin-left: 30px;
+    }
+  }
+    
+  .app-wraper {
+    position: relative;
+  }
+  
+  .app-categories {
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include font( 700, 14px, 1.14, 0.03em);
+    
+    text-align: center;    
+    text-transform: uppercase;
+  
+    color: var(--white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
