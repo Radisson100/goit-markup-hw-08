@@ -21,6 +21,7 @@
     padding-top: 200px;
     padding-bottom: 200px;
   }
+  
   &-title {
     max-width: 360px;
     @include font(900, 26px, 1.61, 0.06em);
@@ -31,13 +32,13 @@
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-  }
 
-  @media screen and (min-width: 1200px) {
-    font-size: 44px;
-    line-height: 1.4;
-    max-width: 696px;
-  }
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.4;
+      max-width: 696px;
+    }
+  }  
 }
 
 @media screen and (min-device-pixel-ratio: 2),
